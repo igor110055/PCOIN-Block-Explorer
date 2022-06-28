@@ -1,8 +1,8 @@
 # PCOIN Block Explorer
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/pcoinproject/PCOIN-Block-Explorer?color=ffbd11&label=version)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pcoinproject/PCOIN-Block-Explorer?color=0A80AB&label=Version)
 ![GitHub last commit](https://img.shields.io/github/last-commit/pcoinproject/PCOIN-Block-Explorer)
-![GitHub](https://img.shields.io/github/license/pcoinproject/PCOIN-Block-Explorer?color=ffbd11)
+![GitHub](https://img.shields.io/github/license/pcoinproject/PCOIN-Block-Explorer?color=0A80AB)
 
 Customized version of [eIquidus](https://github.com/team-exor/eiquidus)
 
