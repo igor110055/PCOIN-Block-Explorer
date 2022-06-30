@@ -932,6 +932,9 @@
           //          If set to false, the /api/getblockcount api will be completely disabled for public use (no definition on the api page and a disabled error msg if you try to call the endpoint directly)
           "enabled": true
         },
+        "getsupplyinfo": {
+          "enabled": true
+        },
         // getblockhash: a collection of settings that pertain to the /api/getblockhash api endpoint
         //               Returns hash of block in best-block-chain at height provided
         //               NOTE: This api is not used internally and is therefore only publicly available
@@ -1224,6 +1227,7 @@
     "getconnectioncount": "getconnectioncount",
     // getblockcount: Returns the number of blocks in the longest blockchain. This should be a positive whole number
     "getblockcount": "getblockcount",
+    "getsupplyinfo": "getsupplyinfo",
     // getblockhash: Returns hash of block in best-block-chain at height provided. This should be a string value
     "getblockhash": "getblockhash",
     // getblock: Returns an object with information about a particular block
