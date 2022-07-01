@@ -306,6 +306,13 @@ html(lang='en')
               var totalsupply = json.totalsupply;
               var splitValue, splitParts;
 
+             if (!isNaN(json.totalsupply))
+                totalsupply = parseInt(parseFloat(json.totalsupply).toFixed(0)).toLocaleString('en');
+             if (!isNaN(json.shieldsupply))
+                shieldsupply = parseInt(parseFloat(json.shieldsupply).toFixed(0)).toLocaleString('en');
+             if (!isNaN(json.transparentsupply))
+                transparentsupply = parseInt(parseFloat(json.transparentsupply).toFixed(0)).toLocaleString('en');
+              
               $("#supplyInfoupdateheight").text(updateheight);
 
               $("#supplyInfotransparentsupply").text(transparentsupply);
