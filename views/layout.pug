@@ -316,17 +316,10 @@ html(lang='en')
               $("#supplyInfoupdateheight").text(updateheight);
 
               $("#supplyInfotransparentsupply").text(transparentsupply);
-              splitValue = parseInt(parseFloat(json.transparentsupply).toFixed(0))).toLocaleString('en',{'minimumFractionDigits':2,'maximumFractionDigits':8,'useGrouping':true});
-              splitParts = splitValue.split('.');
 
               $("#supplyInfoshieldsupply").text(shieldsupply);
-              splitValue = parseInt(parseFloat(json.shieldsupply).toFixed(0))).toLocaleString('en',{'minimumFractionDigits':2,'maximumFractionDigits':8,'useGrouping':true});
-              splitParts = splitValue.split('.');
 
               $("#supplyInfototalsupply").text(totalsupply);
-              splitValue = parseInt(parseFloat(json.totalsupply).toFixed(0))).toLocaleString('en',{'minimumFractionDigits':2,'maximumFractionDigits':8,'useGrouping':true});
-              splitParts = splitValue.split('.');
-
 
               showTopPanelData('supplyInfopanel', 'supplyInfoPanelLoading');
             }
