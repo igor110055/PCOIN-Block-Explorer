@@ -721,7 +721,7 @@ app.set('richlist_page', settings.richlist_page);
 app.set('markets_page', settings.markets_page);
 app.set('api_page', settings.api_page);
 app.set('claim_address_page', settings.claim_address_page);
-app.set('charts_page', settings.charts_page);
+app.set('stats_page', settings.stats_page);
 app.set('labels', settings.labels);
 app.set('api_cmds', settings.api_cmds);
 app.set('blockchain_specific', settings.blockchain_specific);

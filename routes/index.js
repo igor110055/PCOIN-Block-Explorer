@@ -446,24 +446,24 @@ router.get('/info', function(req, res) {
   }
 });
 
-router.get('/charts', function(req, res) {
-  // ensure charts page is enabled
-  if (settings.charts_page.enabled == true) {
-    // load the charts page
+router.get('/stats', function(req, res) {
+  // ensure stats page is enabled
+  if (settings.stats_page.enabled == true) {
+    // load the stats page
     res.render(
-      'charts',
+      'stats',
       {
-        active: 'charts',
+        active: 'stats',
         address: req.headers.host,
         showSync: db.check_show_sync_message(),
         customHash: get_file_timestamp('./public/css/custom.scss'),
         styleHash: get_file_timestamp('./public/css/style.scss'),
         themeHash: get_file_timestamp('./public/css/themes/' + settings.shared_pages.theme.toLowerCase() + '/bootstrap.min.css'),
-        page_title_prefix: settings.coin.name + ' Charts'
+        page_title_prefix: settings.coin.name + ' Stats'
       }
     );
   } else {
-    // Charts page is not enabled so default to the index page
+    // Stats page is not enabled so default to the index page
     route_get_index(res, null);
   }
 });

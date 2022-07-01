@@ -10,7 +10,7 @@
   "menu_node": "Nodes",
   "menu_network": "Network",
   "menu_claim_address": "Claim Address",
-  "menu_charts": "Charts",
+  "menu_stats": "Stats",
 
   // explorer view
   "ex_title": "{1} Block Explorer",
@@ -172,9 +172,9 @@
   "claim_title": "{1} Wallet Address Claim",
   "claim_description": "Verify ownership of your {1} wallet address and set a custom display name in the explorer",
 
-  // Charts view
-  "charts_title": "{1} Charts",
-  "charts_description": "{1} Charts",
+  // Stats view
+  "stats_title": "{1} Stats",
+  "stats_description": "{1} Stats",
   
   // heavycoin rewards view
   "heavy_title": "{1} Reward/Voting Details",
