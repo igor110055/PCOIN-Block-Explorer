@@ -262,6 +262,8 @@ html(lang='en')
 
             $("#lblConnections").text(json.connections + ' connections');
             $("#lblBlockcount").text(json.blockcount + ' blocks');
+            $("#statsBlockcount").text(json.blockcount + ' Current Block');
+
           }});
 
           $.ajax({url: '/api/getsupplyinfo', headers: summary_headers, success: function(json) {
