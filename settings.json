@@ -455,7 +455,7 @@
   // index_page: a collection of settings that pertain to the index page
   "index_page": {
     // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": true,
+    "show_panels": false,
     // page_header: a collection of settings that pertain to the index page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
