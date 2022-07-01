@@ -23,7 +23,7 @@
   "ex_latest_transactions": "Latest Transactions",
   "ex_summary": "Block Summary",
   "ex_supply": "Coin Supply",
-  "ex_supplyInfo": "{1} Supply Details",
+  "ex_supplyInfo": "PCOIN Supply Details",
   "ex_block": "Block",
 
   // transaction view

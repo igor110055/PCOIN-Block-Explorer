@@ -303,10 +303,13 @@ html(lang='en')
               var updateheight = json.updateheight;
               var transparentsupply = json.transparentsupply;
               var shieldsupply = json.shieldsupply;
+              var totalsupply = json.totalsupply;
 
               $("#supplyInfoupdateheight").text(updateheight);
               $("#supplyInfotransparentsupply").text(transparentsupply);
               $("#supplyInfoshieldsupply").text(shieldsupply);
+              $("#supplyInfototalsupply").text(totalsupply);
+
 
               showTopPanelData('supplyInfopanel', 'supplyInfoPanelLoading');
             }
@@ -510,9 +513,9 @@ html(lang='en')
           var supplyInfoupdateheight='<label id="supplyInfoupdateheight"></label>';
           var supplyInfotransparentsupply='<label id="supplyInfotransparentsupply"></label>';
           var supplyInfoshieldsupply='<label id="supplyInfoshieldsupply"></label>';
-          var supplyTotal='<label id="supply"></label>';
+          var supplyInfototalsupply='<label id="supplyInfototalsupply"></label>';
 
-          return '<div class="card-header"><strong>#{settings.locale.ex_supplyInfo} </strong></div><div class="card-body"><div id="supplyInfoPanelLoading" class="header-panel"><i class="fa fa-spinner fa-pulse"></i></div><div id="supplyInfopanel" class="header-panel" style="display:none;">'+supplyInfoupdateheight+'</div><div id="supplyInfopanel" class="header-panel" style="display:none;"><span class="fa fa-chart-pie"></span>'+supplyInfotransparentsupply+'</div><div id="supplyInfopanel" class="header-panel" style="display:none;"><span class="fa fa-chart-pie"></span>'+supplyInfoshieldsupply+'</div><div id="supplyInfopanel" class="header-panel" style="display:none;"><span class="fa fa-chart-pie"></span>'+supplyTotal+'</div></div>';
+          return '<div class="card-header"><strong>#{settings.locale.ex_supplyInfo} </strong></div><div class="card-body"><div id="supplyInfoPanelLoading" class="header-panel"><i class="fa fa-spinner fa-pulse"></i></div><div id="supplyInfopanel" class="header-panel">'+supplyInfoupdateheight+'</div><div id="supplyInfopanel" class="header-panel"><span class="fa fa-chart-pie"></span>'+supplyInfotransparentsupply+'</div><div id="supplyInfopanel" class="header-panel"><span class="fa fa-chart-pie"></span>'+supplyInfoshieldsupply+'</div><div id="supplyInfopanel" class="header-panel"><span class="fa fa-chart-pie"></span>'+supplyInfototalsupply+'</div></div>';
         }
         function getPricePanel() {
           var priceType='<label id="lastPrice">-</label>';
