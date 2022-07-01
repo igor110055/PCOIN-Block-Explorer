@@ -483,8 +483,6 @@
 
   // block_page: a collection of settings that pertain to the block page
   "block_page": {
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the block page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -502,8 +500,6 @@
 
   // transaction_page: a collection of settings that pertain to the transaction/tx page
   "transaction_page": {
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the transaction/tx page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -524,8 +520,6 @@
 
   // address_page: a collection of settings that pertain to the address page
   "address_page": {
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the address page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -578,8 +572,6 @@
     // enabled: Enable/disable the masternodes page (true/false)
     //          If set to false, the masternodes page will be completely inaccessible
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the masternodes page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -606,8 +598,6 @@
     // enabled: Enable/disable the movement page (true/false)
     //          If set to false, the movement page will be completely inaccessible
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the movement page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -644,8 +634,6 @@
     // enabled: Enable/disable the network page (true/false)
     //          If set to false, the network page will be completely inaccessible
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the network page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -688,8 +676,6 @@
     // enabled: Enable/disable the richlist/top100 page (true/false)
     //          If set to false, the richlist/top100 page will be completely inaccessible
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the richlist/top100 page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -739,8 +725,6 @@
     // enabled: Enable/disable the markets pages (true/false)
     //          If set to false, all market pages will be completely inaccessible
     "enabled": false,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the markets page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -876,8 +860,6 @@
     // enabled: Enable/disable the public api system (true/false)
     //          If set to false, the entire api page will be disabled and all public api endpoints will show a "This method is disabled" msg when called regardless of their individual enabled statuses
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the api page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -1116,8 +1098,6 @@
     //          If set to false, the claim page will be completely inaccessible
     //          NOTE: Disabling this feature after addresses have already been claimed will effectively hide the claimed values and restore the original wallet addresses again
     "enabled": true,
-    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-    "show_panels": false,
     // page_header: a collection of settings that pertain to the claim address page header
     "page_header": {
       // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)
@@ -1138,6 +1118,7 @@
 
   "charts_page": {
     "enabled": true,
+    // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
     "show_panels": true,
     // show_nethash_chart: Determine whether to show the network hashrate chart configured in the shared_pages.network_charts.nethash_chart section across the top of this page (true/false)
     "show_nethash_chart": false,
@@ -1286,9 +1267,6 @@
         // enabled: Enable/disable the reward page (true/false)
         //          If set to false, the reward page will be completely inaccessible
         "enabled": true,
-        // show_panels: Determine whether to show the panels configured in the shared_pages.page_header section across the top of this page (true/false)
-        "show_panels": false,
-
         // page_header: a collection of settings that pertain to the reward page header
         "page_header": {
           // show_img: Determine whether to show the page title image defined in the "shared_pages.page_header.page_title_image" setting (true/false)

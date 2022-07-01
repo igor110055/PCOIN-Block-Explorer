@@ -72,34 +72,10 @@
   }
 }
 
-.supplyInfoTotal{
-  border-width: 0px;
-  background: #d6d017;
-  background: repeating-radial-gradient(circle farthest-corner at center center, #8f8b0d 0%, #d6d017 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.supplyInfoTransparent{
-  border-width: 0px;
-  background: #0aab1f;
-  background: repeating-radial-gradient(circle farthest-corner at center center, #086f16 0%, #0aab1f 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.supplyInfoShield{
+.supplyInfo{
   border-width: 0px;
   background: #0A80AB;
   background: repeating-radial-gradient(circle farthest-corner at center center, #0A80AB 0%, #13B9F6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.supplyInfoBlock{
-  border-width: 0px;
-  background: #0aabab;
-  background: repeating-radial-gradient(circle farthest-corner at center center, #0a6e6e 0%, #0aabab 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

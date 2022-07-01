@@ -40,36 +40,6 @@ html(lang='en')
       when 'home'
         if settings.index_page.show_panels == true
           - showPanels = true
-      when 'block'
-        if settings.block_page.show_panels == true
-          - showPanels = true
-      when 'tx'
-        if settings.transaction_page.show_panels == true
-          - showPanels = true
-      when 'address'
-        if settings.address_page.show_panels == true
-          - showPanels = true
-      when 'masternodes'
-        if settings.masternodes_page.show_panels == true
-          - showPanels = true
-      when 'movement'
-        if settings.movement_page.show_panels == true
-          - showPanels = true
-      when 'network'
-        if settings.network_page.show_panels == true
-          - showPanels = true
-      when 'richlist'
-        if settings.richlist_page.show_panels == true
-          - showPanels = true
-      when 'markets'
-        if settings.markets_page.show_panels == true
-          - showPanels = true
-      when 'info'
-        if settings.api_page.show_panels == true
-          - showPanels = true
-      when 'claim-address'
-        if settings.claim_address_page.show_panels == true
-          - showPanels = true
       when 'charts'
         if settings.charts_page.show_panels == true
           - showPanels = true
@@ -77,9 +47,6 @@ html(lang='en')
           - showNethashChart = true
         if settings.charts_page.show_difficulty_chart == true
           - showDifficultyChart = true
-      when 'reward'
-        if settings.blockchain_specific.heavycoin.reward_page.show_panels == true
-          - showPanels = true
       default
         if settings.error_page.show_panels == true
           - showPanels = true
@@ -314,11 +281,8 @@ html(lang='en')
                 transparentsupply = parseInt(parseFloat(json.transparentsupply).toFixed(0)).toLocaleString('en');
               
               $("#supplyInfoupdateheight").text(updateheight);
-
               $("#supplyInfotransparentsupply").text(transparentsupply);
-
               $("#supplyInfoshieldsupply").text(shieldsupply);
-
               $("#supplyInfototalsupply").text(totalsupply);
 
               showTopPanelData('supplyInfopanel', 'supplyInfoPanelLoading');
@@ -524,7 +488,7 @@ html(lang='en')
           var supplyInfotransparentsupply='<label id="supplyInfotransparentsupply"></label>';
           var supplyInfoshieldsupply='<label id="supplyInfoshieldsupply"></label>';
           var supplyInfototalsupply='<label id="supplyInfototalsupply"></label>';
-          return '<div class="card-header"><strong>#{settings.locale.ex_supplyInfo} </strong></div><div class="card-body"><div class="supplyInfoBlock">Update height<div id="supplyInfopanel" class="header-panel">'+supplyInfoupdateheight+'</div></div><div class="supplyInfoTransparent">Transparent Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfotransparentsupply+'</div></div><div class="supplyInfoShield">Shield Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfoshieldsupply+'</div></div><div class="supplyInfoTotal">Total Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfototalsupply+'</div></div></div>';
+          return '<div class="card-header"><strong>#{settings.locale.ex_supplyInfo} </strong></div><div class="card-body"><div class="supplyInfosupplyInfo">Update height<div id="supplyInfopanel" class="header-panel">'+supplyInfoupdateheight+'</div></div><div class="supplyInfo">Transparent Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfotransparentsupply+'</div></div><div class="supplyInfo">Shield Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfoshieldsupply+'</div></div><div class="supplyInfo">Total Supply<div id="supplyInfopanel" class="header-panel">'+supplyInfototalsupply+'</div></div></div>';
         }
         function getPricePanel() {
           var priceType='<label id="lastPrice">-</label>';
