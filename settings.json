@@ -239,6 +239,10 @@
           // display_order: Determine which order this panel is shown from 1-5
           //                1 = far left panel, 5 = far right panel
           //                The panel will be disabled with a value of 0
+          "display_order": 0
+        },
+        "coin_supply_info_panel": {
+          "enabled": true,
           "display_order": 5
         },
         // logo_panel: a collection of settings that pertain to the logo panel which displays the "shared_pages.logo" image

@@ -1,31 +1,3 @@
 extends layout
 
 block content
-  include ./includes/common.pug
-  script.
-    $(document).ready(function() {
-      var useNewDashFormat = false;
-      var ctable = $('#masternodes-table').dataTable({
-        order: [[ 5, 'desc' ]],
-        ajax: {
-          url: '/ext/getmasternodelist',
-          dataSrc: function(json) {
-            for (i = 0; i < json.length; i++) {
-              var addr = json[i]['addr'];
-
-              if (json[i]['activetime'])
-                json[i]['activetime'] = secondsToHms(json[i]['activetime']);
-              else
-                json[i]['activetime'] = '<em>N/A</em>';
-            }
- 
-            useNewDashFormat = json.length > 0 && json[0].ip_address != null && json[0].ip_address != '';
- 
-            return json;
-          }
-        },
-        columns: [
-          { name: 'activetime', data: 'activetime', className: "activeTimeCol" }
-        ],
-      });
-    });
