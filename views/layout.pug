@@ -699,6 +699,7 @@ html(lang='en')
           if showPanels == true
             .row.text-center.d-flex.justify-content-center
               div(class="col-lg-2 col-lg-offset-" + settings.paneloffset)
+              #statsBlockcount
                 - if (settings.panel1 != '') {
                   .card.card-default.border-0.d-lg-block.d-block.cardSpacer(id='pnlOne')
                 - }
